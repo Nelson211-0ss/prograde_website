@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html, body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .top-bar {
+            background-color: #0A2C4C;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 51;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .top-bar a {
+            color: #fff;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        .top-bar a:hover {
+            color: var(--color-secondary);
+        }
+        header {
+            position: sticky;
+            top: 40px;
+            width: 100%;
+            z-index: 50;
+            background-color: #051C2C;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .hero-section {
+            margin-top: -1px; /* Remove gap */
+            padding-top: 0;
+            position: relative;
+            z-index: 1;
+        
+        }
+        /* Fix wrapper spacing */
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+            margin-top: 0;
+            padding-top: 0;
+        }
+    </style>
+</head>
+<body class="wrapper">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex justify-end text-white text-sm space-x-6">
+                <a href="tel:+254734559119" class="hover:text-secondary">
+                    <i class="fas fa-phone"></i>
+                    +254 734 559 119
+                </a>
+                <a href="mailto:info@prograteventures.com" class="hover:text-secondary">
+                    <i class="fas fa-envelope"></i>
+                    info@prograteventures.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-primary">
+        <div class="container mx-auto px-4 md:px-8">
+            <nav class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <a href="/" class="flex items-center">
+                    <img src="Blue Logo.png" alt="Prograte Capital Ventures" class="h-12">
+                    <span class="ml-3 text-xl font-semibold text-white">Prograte Capital Ventures</span>
+                </a>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center px-3 py-2 text-white hover:text-secondary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6 items-center">
+                        <li><a href="index.html" class="py-2 px-3 text-white hover:text-secondary transition-colors nav-link" data-page="home">Home</a></li>
+                        <li><a href="about.html" class="py-2 px-3 text-white hover:text-secondary transition-colors nav-link" data-page="about">About</a></li>
+                        <li><a href="service.html" class="py-2 px-3 text-white hover:text-secondary transition-colors nav-link" data-page="services">Services</a></li>
+                        <li><a href="impact.html" class="py-2 px-3 text-white hover:text-secondary transition-colors nav-link" data-page="impact">Impact</a></li>
+                        <li><a href="contact.html" class="py-2 px-3 text-white hover:text-secondary transition-colors nav-link" data-page="contact">Contact</a></li>
+                        <li><a href="apply.html" class="bg-secondary hover:bg-secondary/90 text-white px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105 nav-link" data-page="apply">Apply Now</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-primary z-50">
+        <div class="min-h-screen flex flex-col">
+            <div class="flex justify-between items-center p-4">
+                <div class="flex items-center text-lg font-bold">
+                    <div class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-xl mr-2">↗</div>
+                    <span>Prograte</span>
+                </div>
+                <button id="mobile-menu-close" class="text-white hover:text-secondary transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex-1 flex items-center">
+                <ul class="w-full flex flex-col items-center space-y-6">
+                    <li class="w-full"><a href="index.html" class="block w-full text-center text-xl font-semibold text-white hover:text-secondary transition-colors nav-link py-3" data-page="home">Home</a></li>
+                    <li class="w-full"><a href="about.html" class="block w-full text-center text-xl font-semibold text-white hover:text-secondary transition-colors nav-link py-3" data-page="about">About</a></li>
+                    <li class="w-full"><a href="service.html" class="block w-full text-center text-xl font-semibold text-white hover:text-secondary transition-colors nav-link py-3" data-page="services">Services</a></li>
+                    <li class="w-full"><a href="impact.html" class="block w-full text-center text-xl font-semibold text-white hover:text-secondary transition-colors nav-link py-3" data-page="impact">Impact</a></li>
+                    <li class="w-full"><a href="contact.html" class="block w-full text-center text-xl font-semibold text-white hover:text-secondary transition-colors nav-link py-3" data-page="contact">Contact</a></li>
+                    <li class="w-full px-8"><a href="apply.html" class="block w-full text-center text-xl font-semibold bg-secondary hover:bg-secondary/90 text-white py-3 rounded-full transition-all transform hover:scale-105 nav-link" data-page="apply">Apply Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <div class="hero-section">
+            <!-- Your hero content goes here -->
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Highlight current page in navigation
+                const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'home';
+                document.querySelectorAll(`[data-page="${currentPage}"]`).forEach(link => {
+                    link.classList.add('border-b-2', 'border-secondary');
+                });
+
+                // Mobile menu functionality
+                const mobileMenu = document.getElementById('mobile-menu');
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+                function toggleMenu() {
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.classList.toggle('overflow-hidden');
+                    
+                    // Log for debugging
+                    console.log('Toggle menu clicked');
+                    console.log('Menu hidden:', mobileMenu.classList.contains('hidden'));
+                }
+
+                // Add click event listeners
+                mobileMenuButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleMenu();
+                });
+
+                mobileMenuClose.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleMenu();
+                });
+
+                // Close mobile menu when clicking on a link
+                document.querySelectorAll('#mobile-menu .nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        toggleMenu();
+                    });
+                });
+
+                // Close mobile menu when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!mobileMenu.contains(e.target) && 
+                        !mobileMenuButton.contains(e.target) && 
+                        !mobileMenu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+
+                // Prevent clicks inside mobile menu from closing it
+                mobileMenu.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            });
+        </script>
+    </main>
+</body>
+</html>

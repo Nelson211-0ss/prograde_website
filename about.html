@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Prograte Capital Ventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0a5c97',
+                        'primary-light': '#e8f4fc',
+                        secondary: '#e87722',
+                        'secondary-light': '#fdf1e8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 leading-relaxed">
+    <!-- Include topbar -->
+    <div id="topbar-container"></div>
+    <!-- Include header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main content -->
+    <main class="pt-[0px]">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="back2.jpg" alt="" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/95 to-primary-dark/95"></div>
+            </div>
+            
+            <!-- Content -->
+            <div class="relative py-24">
+                <div class="max-w-6xl mx-auto px-8">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <!-- Text Content -->
+                        <div class="text-white space-y-6">
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">About Prograte Capital Ventures</h1>
+                            <p class="text-lg md:text-xl text-gray-100 max-w-xl leading-relaxed">Revolutionizing financial inclusion for women entrepreneurs in Uganda's informal sector through innovative investment solutions and comprehensive support.</p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#mission" class="inline-flex items-center px-6 py-2.5 bg-secondary hover:bg-secondary/90 text-white font-semibold rounded-full transition-all transform hover:scale-105">
+                                    <span>Our Mission</span>
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                                    </svg>
+                                </a>
+                                <a href="#team" class="inline-flex items-center px-6 py-2.5 border-2 border-white/20 hover:border-white/40 text-white font-semibold rounded-full transition-all">
+                                    Meet Our Team
+                                </a>
+                            </div>
+                            
+                            <!-- Stats -->
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-8">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                                    <div class="text-2xl font-bold text-secondary">5+</div>
+                                    <div class="text-gray-300 text-xs">Years Experience</div>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                                    <div class="text-2xl font-bold text-secondary">83%</div>
+                                    <div class="text-gray-300 text-xs">Success Rate</div>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                                    <div class="text-2xl font-bold text-secondary">100+</</div>
+                                    <div class="text-gray-300 text-xs">Women Empowered</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Image/Illustration -->
+                        <div class="relative hidden md:block">
+                            <div class="aspect-square rounded-full bg-white/10 absolute -right-16 -top-16 w-48 blur-3xl"></div>
+                            <div class="aspect-square rounded-full bg-secondary/20 absolute -right-8 -bottom-8 w-32 blur-3xl"></div>
+                            <img src="back.jpeg" alt="Women Entrepreneurs in Uganda" class="relative z-10 w-full h-auto rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-500 bg-white/5 backdrop-blur-sm p-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-12 md:py-20 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-center justify-center w-12 h-12 bg-secondary-light rounded-xl mb-4">
+                        <i data-feather="target" class="w-6 h-6 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 text-center">Our Mission</h3>
+                    <p class="text-gray-600 text-base md:text-lg">To empower Ugandan women entrepreneurs through targeted micro-investments and support, driving economic growth and gender equality in the informal sector.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-all">
+                    <div class="flex items-center justify-center w-12 h-12 bg-secondary-light rounded-xl mb-4">
+                        <i data-feather="eye" class="w-6 h-6 text-secondary"></i>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 text-center">Our Vision</h3>
+                    <p class="text-gray-600 text-base md:text-lg">To be the leading catalyst for women's economic empowerment in Uganda, creating a thriving ecosystem of successful women-owned businesses that contribute significantly to the country's economic development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="py-12 md:py-20 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-8 text-center">Our Core Values</h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 md:mb-12 text-center max-w-3xl mx-auto px-4">The principles that guide our work and shape our approach</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <div class="flex items-center justify-center w-12 h-12 bg-secondary-light rounded-xl mb-4">
+                            <i data-feather="dollar-sign" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4 text-center">Financial Inclusion</h3>
+                        <p class="text-gray-600 text-base md:text-lg">We believe access to capital should be based on business fundamentals and character, not collateral. Our innovative financing solutions break down traditional barriers to create opportunities for talented entrepreneurs.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <div class="flex items-center justify-center w-12 h-12 bg-secondary-light rounded-xl mb-4">
+                            <i data-feather="users" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4 text-center">Community-Driven</h3>
+                        <p class="text-gray-600 text-base md:text-lg">Our deep community connections and local presence enable us to understand entrepreneurs' needs and validate their potential through social capital and reputation.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        <div class="flex items-center justify-center w-12 h-12 bg-secondary-light rounded-xl mb-4">
+                            <i data-feather="bar-chart-2" class="w-6 h-6 text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-bold text-primary mb-3 md:mb-4 text-center">Data-Driven Impact</h3>
+                        <p class="text-gray-600 text-base md:text-lg">We measure what matters. Our rigorous approach to tracking both financial and social metrics ensures transparency, accountability, and continuous improvement in our impact.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-16 md:py-24 px-4 md:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-semibold mb-4">Our Team</span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-primary mb-4">Leadership Team</h2>
+                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">Meet the visionaries driving our mission to transform Uganda's entrepreneurial landscape</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div class="group">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="relative">
+                                <img src="/api/placeholder/400/400" alt="Kevin Kuteesa" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-primary mb-1">Kevin Kuteesa</h3>
+                                <p class="text-secondary font-semibold text-sm mb-4">Chief Executive Officer</p>
+                                <div class="flex space-x-3 pt-3 border-t border-gray-100">
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="linkedin" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="twitter" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="mail" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="relative">
+                                <img src="/api/placeholder/400/400" alt="Angella Kawala" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-primary mb-1">Angella Kawala</h3>
+                                <p class="text-secondary font-semibold text-sm mb-4">Chief Operation Officer</p>
+                                <div class="flex space-x-3 pt-3 border-t border-gray-100">
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="linkedin" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="twitter" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="mail" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="relative">
+                                <img src="jdiobe.jpg" alt="Muwanika Jdiobe" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-primary mb-1">Muwanika Jdiobe</h3>
+                                <p class="text-secondary font-semibold text-sm mb-4">Chief Strategy Officer</p>
+                                <div class="flex space-x-3 pt-3 border-t border-gray-100">
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="linkedin" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="twitter" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="mail" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="relative">
+                                <img src="josh.png" alt="Joshua Mugisha" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-primary mb-1">Joshua Mugisha</h3>
+                                <p class="text-secondary font-semibold text-sm mb-4">Chief Technology Officer</p>
+                                <div class="flex space-x-3 pt-3 border-t border-gray-100">
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="linkedin" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="twitter" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="mail" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                            <div class="relative">
+                                <img src="babra.jpg" alt="Barbara Mutabazi" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-lg font-bold text-primary mb-1">Barbara Mutabazi</h3>
+                                <p class="text-secondary font-semibold text-sm mb-4">Chief Financial Officer</p>
+                                <div class="flex space-x-3 pt-3 border-t border-gray-100">
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="linkedin" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="twitter" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group/icon">
+                                        <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center transition-all duration-300 group-hover/icon:bg-primary">
+                                            <i data-feather="mail" class="w-4 h-4 text-primary group-hover/icon:text-white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="py-12 md:py-20 px-4 md:px-8">
+            <div class="max-w-4xl mx-auto bg-secondary-light rounded-lg p-6 md:p-12 text-center">
+                <blockquote class="text-xl md:text-2xl italic text-gray-800 mb-6 md:mb-8 relative">
+                    "We're not just providing capital — we're building a sustainable ecosystem that transforms women entrepreneurs into economic powerhouses. By eliminating traditional barriers and providing comprehensive support, we're creating a pathway to financial inclusion and independence."
+                </blockquote>
+                <div class="font-bold text-primary text-lg md:text-xl">— Kevin kuteesa, Co-Founder & CEO</div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-12 md:py-20 px-4 md:px-8 bg-primary text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Join Our Mission</h2>
+                <p class="text-lg md:text-xl mb-6 md:mb-8 px-4">Whether you're a potential investor, entrepreneur, or partner, there are many ways to get involved with Prograte Capital Ventures. Together, we can revolutionize financial inclusion in Uganda while generating strong, consistent returns.</p>
+                <a href="#" class="inline-block bg-secondary text-white px-8 md:px-10 py-3 md:py-4 rounded-full font-bold tracking-wide hover:bg-opacity-90 transform hover:scale-105 transition-all text-base md:text-lg">Get Involved</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Include footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Component Loading Script -->
+    <script>
+        // Load topbar
+        fetch('topbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('topbar-container').innerHTML = data;
+                // Initialize feather icons for the topbar
+                feather.replace();
+            });
+            
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+        
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
